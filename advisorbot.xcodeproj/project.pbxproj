@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E683915E294B919100EC9A34 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E683915D294B919100EC9A34 /* main.cpp */; };
+		E6501B7C296B6E2500E48764 /* OrderBookEntry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E6501B71296B6E2500E48764 /* OrderBookEntry.cpp */; };
+		E6501B7D296B6E2500E48764 /* Advisorbot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E6501B72296B6E2500E48764 /* Advisorbot.cpp */; };
+		E6501B7E296B6E2500E48764 /* OrderBook.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E6501B73296B6E2500E48764 /* OrderBook.cpp */; };
+		E6501B7F296B6E2500E48764 /* CSVReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E6501B78296B6E2500E48764 /* CSVReader.cpp */; };
+		E6501B80296B6E2500E48764 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E6501B7B296B6E2500E48764 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +27,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E6501B71296B6E2500E48764 /* OrderBookEntry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OrderBookEntry.cpp; sourceTree = "<group>"; };
+		E6501B72296B6E2500E48764 /* Advisorbot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Advisorbot.cpp; sourceTree = "<group>"; };
+		E6501B73296B6E2500E48764 /* OrderBook.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OrderBook.cpp; sourceTree = "<group>"; };
+		E6501B74296B6E2500E48764 /* CSVReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVReader.h; sourceTree = "<group>"; };
+		E6501B75296B6E2500E48764 /* OrderBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderBook.h; sourceTree = "<group>"; };
+		E6501B76296B6E2500E48764 /* 20200601.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 20200601.csv; sourceTree = "<group>"; };
+		E6501B77296B6E2500E48764 /* 20200317.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 20200317.csv; sourceTree = "<group>"; };
+		E6501B78296B6E2500E48764 /* CSVReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CSVReader.cpp; sourceTree = "<group>"; };
+		E6501B79296B6E2500E48764 /* OrderBookEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderBookEntry.h; sourceTree = "<group>"; };
+		E6501B7A296B6E2500E48764 /* Advisorbot.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Advisorbot.hpp; sourceTree = "<group>"; };
+		E6501B7B296B6E2500E48764 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		E683915A294B919100EC9A34 /* advisorbot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = advisorbot; sourceTree = BUILT_PRODUCTS_DIR; };
-		E683915D294B919100EC9A34 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,10 +52,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E6501B70296B6E2500E48764 /* advisorbot */ = {
+			isa = PBXGroup;
+			children = (
+				E6501B71296B6E2500E48764 /* OrderBookEntry.cpp */,
+				E6501B72296B6E2500E48764 /* Advisorbot.cpp */,
+				E6501B73296B6E2500E48764 /* OrderBook.cpp */,
+				E6501B74296B6E2500E48764 /* CSVReader.h */,
+				E6501B75296B6E2500E48764 /* OrderBook.h */,
+				E6501B76296B6E2500E48764 /* 20200601.csv */,
+				E6501B77296B6E2500E48764 /* 20200317.csv */,
+				E6501B78296B6E2500E48764 /* CSVReader.cpp */,
+				E6501B79296B6E2500E48764 /* OrderBookEntry.h */,
+				E6501B7A296B6E2500E48764 /* Advisorbot.hpp */,
+				E6501B7B296B6E2500E48764 /* main.cpp */,
+			);
+			path = advisorbot;
+			sourceTree = "<group>";
+		};
 		E6839151294B919100EC9A34 = {
 			isa = PBXGroup;
 			children = (
-				E683915C294B919100EC9A34 /* advisorbot */,
+				E6501B70296B6E2500E48764 /* advisorbot */,
 				E683915B294B919100EC9A34 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,14 +84,6 @@
 				E683915A294B919100EC9A34 /* advisorbot */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		E683915C294B919100EC9A34 /* advisorbot */ = {
-			isa = PBXGroup;
-			children = (
-				E683915D294B919100EC9A34 /* main.cpp */,
-			);
-			path = advisorbot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +143,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E683915E294B919100EC9A34 /* main.cpp in Sources */,
+				E6501B7F296B6E2500E48764 /* CSVReader.cpp in Sources */,
+				E6501B7C296B6E2500E48764 /* OrderBookEntry.cpp in Sources */,
+				E6501B7E296B6E2500E48764 /* OrderBook.cpp in Sources */,
+				E6501B80296B6E2500E48764 /* main.cpp in Sources */,
+				E6501B7D296B6E2500E48764 /* Advisorbot.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
